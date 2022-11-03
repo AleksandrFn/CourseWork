@@ -28,6 +28,10 @@ public class Employee {
         return salary;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setDepartment(int department) {
         this.department=department;
     }
@@ -37,11 +41,6 @@ public class Employee {
     }
 
     public String toString() {
-return "Фио - "+ fio + " Одел - "+ department+". Зарплата - "+salary+" руб.";
-    }
-    public void listOfEmployees(Employee[] employee) {
-        for (int i = 0; i < count;i++) {
-            System.out.println(employee[i]);
-        }
+        return "Фио - "+ fio + " Отдел - "+ department+". Зарплата - "+salary+" руб.";
     }
 }
